@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="google" content="notranslate">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Tom Payne</title>
+        <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+
+        <style>
+            body {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding-bottom: 20px;
+            }
+
+            header {
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-end;
+                position: relative;
+                width: 100%;
+                height: 250px;
+                border-bottom: 2px solid black;
+                padding: none;
+            }
+
+            header::before {
+                content: "";
+                background-image: url("k3.png");
+                background-size: cover;
+                position: absolute;
+                top: 0px;
+                bottom: 0px;
+                left: 0px;
+                right: 0px;
+                opacity: 0.6;
+            }
+
+            #name_title {
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-end;
+                align-items: flex-start;
+                position: relative;
+                margin-left: 20px;
+                padding: none;
+
+            }
+
+            #name {
+                font-size: 110px;
+                font-weight: thick;
+                font-family: "Trebuchet MS", sans-serif;
+                margin-bottom: -30px;
+                color: black;
+            }
+
+            #title {
+                font-size: 50px;
+                font-weight: lighter;
+                font-family: "Trebuchet MS", sans-serif;
+                margin-top: 50px;
+                margin-bottom: 10px;
+                color: orange;
+            }
+
+            section {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                width: 90%;
+                margin-bottom: 20px;
+            }
+
+            .headline {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                width: 100%;
+                border-bottom: 1px solid black;
+                font-family: Arial, sans-serif;
+            }
+
+            .headline:hover {
+                cursor: pointer;
+                color: orange;
+            }
+
+            .material-icons-outlined {
+                margin-top: 10px;
+                font-size: 48px;
+            }
+
+            .content {
+                max-height: 0px;
+                width: 100%;
+                opacity: 1;
+                overflow: hidden;
+            }
+
+            p {
+                font-family: Arial, sans-serif;
+                font-size: 25px;
+                padding: none;
+            }
+
+            #tp_pic {
+                float: left;
+                margin-right: 20px;
+                margin-top: 30px;
+            }
+
+            #books_row {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                width: 100%;
+                border-bottom: 1px solid black;
+                display: none;
+            }
+
+            .link {
+                color: OrangeRed;
+                text-decoration: underline;
+            }
+
+            .link:hover {
+                cursor: pointer;
+            } 
+
+            @media only screen and (max-width: 600px) {
+                header {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-start;
+                    position: relative;
+                    height: auto;
+                    width: 100%;
+                    /*border-bottom: 2px solid black;*/
+                    border-bottom: none;
+                    padding: none;
+                    margin-bottom: 5px;
+                }
+                
+                header::before {
+                    background: none;
+                }
+                
+                #name_title {
+                    margin-left: 2px;
+                }
+                
+                #name {
+                    font-size: 80px;
+                }
+                
+                #tp_pic {
+                    float: none;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <div id="name_title">
+                <h1 id="name">Tom Payne</h1>
+                <h3 id="title">Digital Marketing</h3>
+            </div>
+        </header>
+
+        <section id="who_am">
+            <div class="headline" id="who_head">
+                <div>
+                    <h2 class="top_line">Who I am</h2> 
+                </div>
+                <div>
+                    <span class="material-icons-outlined" class="icon" id="who_icon">expand_circle_down</span>
+                </div>
+            </div>         
+            <div class="content" id="who_content">
+                <img src="pic.png" id="tp_pic" width="300">
+                <p>I'm a highly-skilled university graduate looking for a digital marketing role.</p>
+                <p>I have a BA in English Studies and an MA in Critical Theory, both from the University of Nottingham. I've also recently completed TDM's Get Ahead in Digital Transformation course, and I'm currently enrolled in Creative Alliance's Digital Skills for Business bootcamp.</p>
+                <p>I'm passionate about pursuing a career in digital marketing. I have the skills to succeed and the will to excel. I'm excited to find out where my career can take me.</p>
+            </div>
+        </section>
+
+        <section id="experience">
+            <div class="headline" id="experience_head">
+                <div>
+                    <h2 class="top_line">My experience</h2> 
+                </div>
+                <div>
+                    <span class="material-icons-outlined" class="icon" id="experience_icon">expand_circle_down</span>
+                </div>
+            </div>   
+            <div class="content" id="experience_content">
+                <p>I'm currently enrolled on the Digital Marketing stream of Creative Alliance's <b>Digital Skills for Business bootcamp</b>. The bootcamp consists of weekly seminars on brand awareness, creating social media campaigns, data analytics and SEO.</p>
+                <p>I recently completed TDM's <b>Get Ahead in Digital Transformation course</b>. For this course I successfully passed Google Digital Garage's Fundamentals of Digital Marketing course. I will take MTA exams in Introduction to Programming with HTML and CSS, and Introduction to Programming with Java in November and December respectively.</p>
+                <p>Between 2013 and 2015 I worked as an <b>Event Safety Steward</b> in central London. I worked at a variety of busy and prestigious events, from the NYE fireworks in Central London to the 2014 FA Cup Final, ensuring that visitors were well-looked after and potential trouble-makers were kept under control.</p>
+                <p>I worked for a few months as <b>Marketing Assistant</b> at Kids Run Free, a Warwickshire charity dedicated to keeping you children healthy and active. In my time there, I took on a variety of tasks, from bringing their website online to managing their social media accounts.</p>
+                <p>Previous to this I was also <b>Projects Assistant</b> for a year at Armonico Consort, another Warwickshire charity aiming to improve children's access to music. My role encompassed a range of duties, from the design and production of flyers and other promotional material to email marketing and copywriting.</p>
+            </div>
+        </section>
+
+        <section id="where_been">
+            <div class="headline" id="where_head">
+                <div>
+                    <h2 class="top_line">My skills</h2> 
+                </div>
+                <div>
+                    <span class="material-icons-outlined" class="icon" id="where_icon">expand_circle_down</span>
+                </div>
+            </div>   
+            <div class="content" id="where_content">
+                <p>My written and verbal communication skills are both excellent. My degrees prioritised the ability to communicate difficult ideas in clean and lucid prose. Since then I've also published short stories in several literary magazines. You can read my favourite one <a href="https://www.thesunmagazine.org/issues/506/rubbish" target="_blank" class="link">here</a>.</p>
+                <p>My time as an event safety steward in London honed my ability to communicate with people from all walks of life. It also developed my problem-solving skills: trying to help a man who had just thrown his shoes in the Thames, kept bursting into tears and was too drunk to remember where he was staying required some serious patience and lateral thinking!</p>
+                <p>I can also write code. I'm proficient in HTML, CSS, Java, JavaScript and Python. My Dad's a talented artist but he isn't good at self-promotion, so I built him <a href="https://payne6.github.io/stephenpayne/" target="_blank" class="link">this website</a> to help him show off his paintings. I like to stay busy, so I built myself this browser-based <a href="https://github.com/Payne6/to_do_list" target="_blank" class="link">to-do list</a> to help me stay on top of my workload. And I'll be taking MTA exams in Introduction to Programming with HTML and CSS and Introduction to Programming with Java in November and December.</p>
+                <p>I can also wiggle my ears - but that's probably not relevant!</p>
+            </div>
+        </section>
+
+        <section id="what_about">
+            <div class="headline" id="what_head">
+                <div>
+                    <h2 class="top_line">My interests</h2> 
+                </div>
+                <div>
+                    <span class="material-icons-outlined" class="icon" id="what_icon">expand_circle_down</span>
+                </div>
+            </div>   
+            <div class="content" id="what_content">
+                <p>I love reading. I try to read as widely as I can. <span class="link" id="books_link">These</span> were my favourite books this year.</p>
+                <div id="books_row">
+                    <div id="book_pics">
+                        <img src="missing_person.png" alt="missing person cover" class="book_cover">
+                        <img src="serious_ladies.png" alt="two serious ladies cover" class="book_cover">
+                        <img src="thucid.png" alt="peloponnesian war cover" class="book_cover">
+                        <img src="marcovaldo.png" alt="marcovaldo cover" class="book_cover">
+                        <img src="bowen.png" alt="the heat of the day cover" class="book_cover">
+                        <img src="bolano.png" alt="by night in chile cover" class="book_cover">
+                        <img src="ice.png" alt="ice cover" class="book_cover">
+                        <img src="maths.png" alt="the hidden maths of everyday life cover" class="book_cover">
+                        <img src="pynchon.png" alt="V cover" class="book_cover">
+                        <p><span class="link" id="hide_books"><em>Hide</em></span></p>
+                    </div>
+                </div>
+                <p>I like cooking and I like coding, so I built an online cookbook. My <a href="https://payne6.github.io/recipebook/meat/borlotti_bean.html" target="_blank" class="link">Borlotti Bean Soup</a> is, if I say so myself, excellent!</p>
+                <p>I love travelling and finding new places. Two of my favourite places at the moment are Athens and Berlin: in their individual ways both these cities have some amazing history behind them but they never feel antiquated, and they're so much fun to explore.</p>
+            </div>
+        </section>
+
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                //alert('Page is loaded');
+
+                //headlines, icons and content for text divs
+                const whoHead = document.getElementById("who_head");
+                const whereHead = document.getElementById("where_head");
+                const whatHead = document.getElementById("what_head");
+                const experienceHead = document.getElementById("experience_head");
+
+                const whoIcon = document.getElementById("who_icon");
+                const whereIcon = document.getElementById("where_icon");
+                const whatIcon = document.getElementById("what_icon");
+                const experienceIcon = document.getElementById("experience_icon");
+
+                const whoContent = document.getElementById("who_content");
+                const whereContent = document.getElementById("where_content");
+                const whatContent = document.getElementById("what_content");
+                const experienceContent = document.getElementById("experience_content");
+
+                const bookRow = document.getElementById("books_row");
+                const bookShow = document.getElementById("books_link");
+                const bookHide = document.getElementById("hide_books");
+
+                //open first content div on page load
+                whoContent.style.maxHeight = "none";
+                whoIcon.innerText = "expand_less";
+
+                //open divs on headline click
+                whoHead.addEventListener("click", () => {
+                    if (whoContent.style.maxHeight == "none") {
+                        whoContent.style.maxHeight = "0px";
+                        whoIcon.innerText = "expand_circle_down";
+                    } else {
+                        whoIcon.innerText = "expand_less";
+                        whoContent.style.maxHeight = "none";
+                    }
+                });
+
+                experienceHead.addEventListener("click", () => {
+                    if (experienceContent.style.maxHeight == "none") {
+                        experienceContent.style.maxHeight = "0px";
+                        experienceIcon.innerText = "expand_circle_down";
+                    } else {
+                        experienceIcon.innerText = "expand_less";
+                        experienceContent.style.maxHeight = "none";
+                    }
+                });
+
+                whereHead.addEventListener("click", () => {
+                    if (whereContent.style.maxHeight == "none") {
+                        whereContent.style.maxHeight = "0px";
+                        whereIcon.innerText = "expand_circle_down";
+                    } else {
+                        whereContent.style.maxHeight = "none";
+                        whereIcon.innerText = "expand_less";
+                    }
+                });
+
+                whatHead.addEventListener("click", () => {
+                    if (whatContent.style.maxHeight == "none") {
+                        whatContent.style.maxHeight = "0px";
+                        whatIcon.innerText = "expand_circle_down";
+                    } else {
+                        whatContent.style.maxHeight = "none";
+                        whatIcon.innerText = "expand_less";
+                    }
+                });
+
+                //show and hide book row
+                bookShow.addEventListener("click", () => {
+                    bookRow.style.display = "block";
+                });
+
+                bookHide.addEventListener("click", () => {
+                    bookRow.style.display = "none";
+                });
+
+            }); 
+
+        </script>
+    </body>
+</html>
